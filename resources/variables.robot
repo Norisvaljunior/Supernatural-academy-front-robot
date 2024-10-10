@@ -4,21 +4,21 @@ Library    String
 
 *** Keywords ***
 Gerar variáveis Faker
-    ${NOMECORPORACAO}=   Company
-    ${CNPJ}=             random_number    digits=14       fix_len=True
-    ${MAIL}=             Email
-    ${MATRIZ}=           Company
-    ${RESPONSAVEL}=      Name
-    ${FONE}=             random_number    digits=14       fix_len=True
-    ${RAMOATIVIDADE}=    Job
+    ${NOMECORPORACAO}=   
+    ${CNPJ}=             FakerLibrary.random_number    digits=14       fix_len=True
+    ${MAIL}=             FakerLibrary.Email
+    ${MATRIZ}=           FakerLibrary.Company
+    ${RESPONSAVEL}=      FakerLibrary.Name
+    ${FONE}=             FakerLibrary.random_number    digits=14       fix_len=True
+    ${RAMOATIVIDADE}=    FakerLibrary.Job
     ${CEP}=              Generate Random String    8      [NUMBERS]
-    ${CIDADE}=           City
-    ${ESTADO}=           State Abbr
-    ${ENDERECO}=         Street Suffix
-    ${BAIRRO}=           City
+    ${CIDADE}=           FakerLibrary.City
+    ${ESTADO}=           FakerLibrary.State Abbr
+    ${ENDERECO}=         FakerLibrary.Street Suffix
+    ${BAIRRO}=           FakerLibrary.City
     ${NUMERO}=           Generate Random String    10     [NUMBERS]
-    ${COMPLEMENTO}       First Name
-    ${PAIS}=             Country
+    ${COMPLEMENTO}       FakerLibrary.First Name
+    ${PAIS}=             FakerLibrary.Country
 
     Set Suite Variable    ${NOMECORPORACAO}      ${NOMECORPORACAO}
     Set Suite Variable    ${CNPJ}                ${CNPJ}            
