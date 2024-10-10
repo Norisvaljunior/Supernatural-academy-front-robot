@@ -4,7 +4,7 @@ Library    String
 
 *** Keywords ***
 Gerar variáveis Faker
-    ${NOMECORPORACAO}=   
+    ${NOMECORPORACAO}=   FakerLibrary.Company
     ${CNPJ}=             FakerLibrary.random_number    digits=14       fix_len=True
     ${MAIL}=             FakerLibrary.Email
     ${MATRIZ}=           FakerLibrary.Company
