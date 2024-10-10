@@ -8,8 +8,7 @@ Resource     variables.robot
 
 
 *** Variables ***
-${URL}                    https://automacao.qacoders.dev.br/login   #https://automacao.qacoders-academy.com.br/login
-${emailsite}              //input[contains(@id,'email')]
+${URL}                    https://automacao.qacoders.dev.br/login   
 ${senhasite}              //input[contains(@type,'password')]
 ${enterButton}            //button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedOrange MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedOrange MuiButton-sizeMedium MuiButton-containedSizeMedium css-ojf4v2'][contains(.,'Entrar')]
 ${EMAIL}                  sysadmin@qacoders.com
@@ -50,7 +49,7 @@ ${empresacancelarButton}    //button[@type='button'][contains(.,'CANCELAR')]
 
 *** Keywords ***
 Abrir o navegador
-    Open Browser  browser=chrome    # usando esse comando, a janela web nao abre -> browser=headlesschrome
+    Open Browser  browser=headlesschrome    # usando esse comando, a janela web nao abre -> browser=headlesschrome
     Maximize Browser Window   
 
 Fechar o navegador
