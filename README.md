@@ -1,8 +1,7 @@
 # Projeto de Automação Frontend Qa Coders Academy T12
 
 Introdução <br/>
-Este projeto tem como objetivo demonstrar o uso do Robot  para realizar testes de FRONTEND automatizados na plataforma ERP da Qa.Coders Academy. 
-
+Este projeto tem como objetivo demonstrar o uso do Robot  para realizar testes de FRONTEND automatizados. O treinamento é oferecido pela Qa.Coders Academy, com o objetivo de aprimorar as habilidades práticas em automação de testes WEB, com o GitHub Actions para realizar testes automatizados Robot Framework.
 Para executar os testes, siga as instruções abaixo : <br>
 Configuração
 Clone o repositório para o seu ambiente local:
