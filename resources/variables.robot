@@ -1,24 +1,24 @@
 *** Settings ***
-Library    FakerLibrary
+#Library    FakerLibrary
 Library    String
 
 *** Keywords ***
 Gerar variáveis Faker
-    ${NOMECORPORACAO}=   FakerLibrary.Company
-    ${CNPJ}=             FakerLibrary.random_number    digits=14       fix_len=True
-    ${MAIL}=             FakerLibrary.Email
-    ${MATRIZ}=           FakerLibrary.Company
-    ${RESPONSAVEL}=      FakerLibrary.Name
-    ${FONE}=             FakerLibrary.random_number    digits=14       fix_len=True
-    ${RAMOATIVIDADE}=    FakerLibrary.Job
+    ${NOMECORPORACAO}=   Set Variable    Supernatual Company
+    ${CNPJ}=             Set Variable    84290543111199
+    ${MAIL}=             Set Variable    supernatural@qacoders.com
+    ${MATRIZ}=           Set Variable    Supernatual
+    ${RESPONSAVEL}=      Set Variable    Norisval
+    ${FONE}=             Generate Random String    14     [NUMBERS]
+    ${RAMOATIVIDADE}=    Set Variable    Qualidade
     ${CEP}=              Generate Random String    8      [NUMBERS]
-    ${CIDADE}=           FakerLibrary.City
-    ${ESTADO}=           FakerLibrary.State Abbr
-    ${ENDERECO}=         FakerLibrary.Street Suffix
-    ${BAIRRO}=           FakerLibrary.City
+    ${CIDADE}=           Set Variable    Navegantes
+    ${ESTADO}=           Set Variable    SC
+    ${ENDERECO}=         Set Variable    Avenida Beira Mar
+    ${BAIRRO}=           Set Variable    Gravata
     ${NUMERO}=           Generate Random String    10     [NUMBERS]
-    ${COMPLEMENTO}       FakerLibrary.First Name
-    ${PAIS}=             FakerLibrary.Country
+    ${COMPLEMENTO}       Set Variable    Teste edicao Supernatural
+    ${PAIS}=             Set Variable    Brasil
 
     Set Suite Variable    ${NOMECORPORACAO}      ${NOMECORPORACAO}
     Set Suite Variable    ${CNPJ}                ${CNPJ}            

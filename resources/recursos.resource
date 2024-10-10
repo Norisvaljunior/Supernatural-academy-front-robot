@@ -2,7 +2,7 @@
 Library      RequestsLibrary
 Library      SeleniumLibrary
 Library      String
-Library      FakerLibrary
+#Library      FakerLibrary
 
 Resource     variables.robot
 
