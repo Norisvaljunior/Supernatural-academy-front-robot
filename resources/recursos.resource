@@ -5,6 +5,7 @@ Library      String
 Library      FakerLibrary
 Resource     variables.robot
 
+
 *** Variables ***
 ${URL}                    https://automacao.qacoders.dev.br/login   #https://automacao.qacoders-academy.com.br/login
 ${emailsite}              //input[contains(@id,'email')]
